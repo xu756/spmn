@@ -2,7 +2,7 @@
 *  @Author: xu756 (https://github.com/xu756)
 *  @Email: 756334744@qq.com
 *  @Date: 2022/7/15 21:06
-*  @Todo:
+*  @To:
  */
 
 package router
@@ -30,6 +30,9 @@ func InitRouter() {
 		},
 		)
 	})
+	/*----------------普通路由-------------------*/
+	UserRouter(r)
+	/*-----------------------------------------*/
 	SocketIo.GetServer(Server)
 	SocketRouter(Server, r)
 
