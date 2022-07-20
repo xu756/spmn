@@ -7,15 +7,12 @@
 
 package router
 
-import "github.com/gin-gonic/gin"
+import (
+	"github.com/gin-gonic/gin"
+	"github.com/xu756/spmn/views/LoginViews"
+)
 
 func UserRouter(r *gin.Engine) {
 	router := r.Group("/spmn/user")
-	router.GET("", func(c *gin.Context) {
-		c.JSON(200, gin.H{
-			"code": 200,
-			"msg":  "success",
-		})
-	})
-
+	router.POST("login", LoginViews.Login)
 }

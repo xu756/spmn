@@ -17,6 +17,8 @@
         <method importPath="github.com/googollee/go-socket.io" receiver="*Server" name="Serve" />
         <method importPath="github.com/googollee/go-socket.io" receiver="*Server" name="Close" />
         <method importPath="github.com/gin-gonic/gin" receiver="*Engine" name="SetTrustedProxies" />
+        <method importPath="github.com/gin-gonic/gin" receiver="*Context" name="ShouldBindJSON" />
+        <method importPath="github.com/gin-gonic/gin" receiver="*Context" name="BindJSON" />
       </methods>
     </inspection_tool>
     <inspection_tool class="SpellCheckingInspection" enabled="false" level="TYPO" enabled_by_default="false">
